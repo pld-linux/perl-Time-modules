@@ -5,11 +5,11 @@ Summary:	Time::modules perl module
 Summary(pl):	Modu³ perla Time::modules
 Name:		perl-Time-modules
 Version:	2003.0211
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,7 +26,8 @@ Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -40,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGELOG
-%{perl_sitelib}/Time/*.pm
+%{perl_vendorlib}/Time/*.pm
 %{_mandir}/man3/*
