@@ -28,7 +28,7 @@ Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
