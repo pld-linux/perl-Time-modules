@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Time
 %define	pnam	modules
-Summary:	Time-modules perl module
-Summary(pl):	Modu³ perla Time-modules
+Summary:	Time::modules perl module
+Summary(pl):	Modu³ perla Time::modules
 Name:		perl-Time-modules
 Version:	101.062101
 Release:	4
@@ -15,11 +15,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Time-modules package contains the following modules: Time::CTime,
+Time::modules package contains the following modules: Time::CTime,
 Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %description -l pl
-Pakiet Time-modules zawiera nastepuj±ce modu³y: Time::CTime,
+Pakiet Time::modules zawiera nastepuj±ce modu³y: Time::CTime,
 Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %prep
