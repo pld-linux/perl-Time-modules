@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Time
-%define	pnam	modules
+%define		pdir	Time
+%define		pnam	modules
 Summary:	Various Time:: Perl modules
 Summary(pl):	Ró¿ne modu³y Perla Time::
 Name:		perl-Time-modules
