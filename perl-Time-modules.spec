@@ -1,27 +1,28 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Time-modules perl module
 Summary(pl):	Modu³ perla Time-modules
 Name:		perl-Time-modules
-Version:	98.112901
-Release:	3
+Version:	99.062301
+Release:	1
 Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Time/Time-modules-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 Time-modules package contains the following modules: 
-Time::CTime.pm, Time::JulianDay.pm, Time::ParseDate.pm, Time::Timezone.pm,
-Time::DaysInMonth.pm.
+Time::CTime, Time::JulianDay, Time::ParseDate, Time::Timezone,
+Time::DaysInMonth.
 
 %description -l pl
 Pakiet Time-modules zawiera nastepuj±ce modu³y: 
-Time::CTime.pm, Time::JulianDay.pm, Time::ParseDate.pm, Time::Timezone.pm,
-Time::DaysInMonth.pm.
+Time::CTime, Time::JulianDay, Time::ParseDate, Time::Timezone,
+Time::DaysInMonth.
 
 %prep
 %setup -q -n Time-modules-%{version}
