@@ -7,7 +7,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Time/Time-modules-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Time/Time-modules-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,14 +15,12 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Time-modules package contains the following modules: 
-Time::CTime, Time::JulianDay, Time::ParseDate, Time::Timezone,
-Time::DaysInMonth.
+Time-modules package contains the following modules: Time::CTime,
+Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %description -l pl
-Pakiet Time-modules zawiera nastepuj±ce modu³y: 
-Time::CTime, Time::JulianDay, Time::ParseDate, Time::Timezone,
-Time::DaysInMonth.
+Pakiet Time-modules zawiera nastepuj±ce modu³y: Time::CTime,
+Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %prep
 %setup -q -n Time-modules-%{version}
