@@ -4,8 +4,8 @@
 Summary:	Time::modules perl module
 Summary(pl):	Modu³ perla Time::modules
 Name:		perl-Time-modules
-Version:	101.062101
-Release:	4
+Version:	2002.1001
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
