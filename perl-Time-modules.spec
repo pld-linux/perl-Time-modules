@@ -2,7 +2,7 @@
 Summary:	Time-modules perl module
 Summary(pl):	Modu³ perla Time-modules
 Name:		perl-Time-modules
-Version:	99.111701
+Version:	100.010301
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Time-modules
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
