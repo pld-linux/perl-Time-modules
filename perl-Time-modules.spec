@@ -26,7 +26,7 @@ Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
