@@ -1,26 +1,30 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Time
 %define	pnam	modules
-Summary:	Time::modules perl module
-Summary(pl):	Modu³ perla Time::modules
+Summary:	Various Time:: Perl modules
+Summary(pl):	Ró¿ne modu³y Perla Time::
 Name:		perl-Time-modules
-Version:	2003.0211
-Release:	2
-License:	GPL
+Version:	2003.1126
+Release:	1
+License:	free (see manuals)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	86f533b6b2999c3609f1a1218de591c3
+# Source0-md5:	b3bda3a2935c2d7d099c8001f583c4cb
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Time::modules package contains the following modules: Time::CTime,
+Time-modules package contains the following modules: Time::CTime,
 Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %description -l pl
-Pakiet Time::modules zawiera nastepuj±ce modu³y: Time::CTime,
+Pakiet Time-modules zawiera nastepuj±ce modu³y: Time::CTime,
 Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %prep
@@ -31,10 +35,13 @@ Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
