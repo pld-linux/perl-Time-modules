@@ -2,9 +2,9 @@
 Summary:	Time-modules perl module
 Summary(pl):	Modu³ perla Time-modules
 Name:		perl-Time-modules
-Version:	99.062301
+Version:	99.111701
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Time/Time-modules-%{version}.tar.gz
