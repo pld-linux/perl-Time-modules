@@ -8,12 +8,12 @@
 Summary:	Various Time:: Perl modules
 Summary(pl):	Ró¿ne modu³y Perla Time::
 Name:		perl-Time-modules
-Version:	2003.1126
+Version:	2006.0814
 Release:	1
 License:	free (see manuals)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b3bda3a2935c2d7d099c8001f583c4cb
+# Source0-md5:	790c6739f601b85654fac9ee516b18d8
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
