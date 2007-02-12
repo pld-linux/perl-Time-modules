@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	modules
 Summary:	Various Time:: Perl modules
-Summary(pl):	Ró¿ne modu³y Perla Time::
+Summary(pl.UTF-8):   RÃ³Å¼ne moduÅ‚y Perla Time::
 Name:		perl-Time-modules
 Version:	2006.0814
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Time-modules package contains the following modules: Time::CTime,
 Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
-%description -l pl
-Pakiet Time-modules zawiera nastepuj±ce modu³y: Time::CTime,
+%description -l pl.UTF-8
+Pakiet Time-modules zawiera nastepujÄ…ce moduÅ‚y: Time::CTime,
 Time::JulianDay, Time::ParseDate, Time::Timezone, Time::DaysInMonth.
 
 %prep
