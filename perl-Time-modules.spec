@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	modules
 Summary:	Various Time:: Perl modules
-Summary(pl.UTF-8):   Różne moduły Perla Time::
+Summary(pl.UTF-8):	Różne moduły Perla Time::
 Name:		perl-Time-modules
 Version:	2006.0814
 Release:	1
