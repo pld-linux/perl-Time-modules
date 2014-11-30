@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Time
 %define		pnam	modules
+%include	/usr/lib/rpm/macros.perl
 Summary:	Various Time:: Perl modules
 Summary(pl.UTF-8):	Różne moduły Perla Time::
 Name:		perl-Time-modules
@@ -14,6 +14,7 @@ License:	free (see manuals)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a4330144e24c356ca4c925d14e5ab06b
+URL:		http://search.cpan.org/dist/Time-modules/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
