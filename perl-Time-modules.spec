@@ -4,7 +4,6 @@
 
 %define		pdir	Time
 %define		pnam	modules
-%include	/usr/lib/rpm/macros.perl
 Summary:	Various Time:: Perl modules
 Summary(pl.UTF-8):	Różne moduły Perla Time::
 Name:		perl-Time-modules
