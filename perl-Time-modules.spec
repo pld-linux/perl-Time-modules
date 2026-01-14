@@ -8,7 +8,7 @@ Summary:	Various Time:: Perl modules
 Summary(pl.UTF-8):	Różne moduły Perla Time::
 Name:		perl-Time-modules
 Version:	2013.0912
-Release:	1
+Release:	2
 License:	free (see manuals)
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
